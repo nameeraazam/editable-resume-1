@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header {
+    background-color: #1c1e21;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.name-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name-heading .name {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+.name-heading .title {
+    font-size: 18px;
+    color: #d3d3d3;
+}
+
+.form-section, .dynamic-resume {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-left: 6px solid #ffcc00;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffcc00;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #1c87c9;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #155a8a;
+}
+
+.dynamic-resume h2 {
+    font-size: 26px;
+    color: #1c1e21;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1c87c9;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.resume-content h3 {
+    font-size: 24px;
+    color: #1c87c9;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.resume-content h4 {
+    font-size: 20px;
+    color: #333;
+    border-left: 4px solid #1c87c9;
+    padding-left: 12px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.resume-content p {
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.resume-content p strong {
+    color: #555;
+}
+
+/* Editable content styles */
+.editable {
+    outline: none; /* Remove default outline on focus */
+}
+
+.editable:focus {
+    border: 1px dashed #ffcc00; /* Add a dashed border when editing */
+}
+
+/* Button styles for printing and downloading */
+#printButton, #downloadButton {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+#printButton:hover, #downloadButton:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #1c1e21;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .form-section, .dynamic-resume {
+        padding: 20px;
+        margin: 10px;
+    }
+    header, footer {
+        padding: 15px;
+    }
+    button {
+        padding: 10px;
+    }
+}

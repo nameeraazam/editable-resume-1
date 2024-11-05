@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Resume of Syeda Nameera, Front-end Developer">
+    <meta name="keywords" content="resume, front-end developer, interactive, personal portfolio">
+    <title>Editable Resume - Syeda Nameera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+    <h1 class="name-heading">
+        <div class="name-container">
+            <span class="name">SYEDA NAMEERA</span><br>
+            <span class="title">Front-end Developer</span>
+        </div>
+    </h1>
+</header>
+
+<main>
+    <section class="form-section box">
+        <h2><i class="fa-solid fa-edit"></i> Create Your Resume</h2>
+        <hr>
+        <form id="resumeForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your name" required>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" name="profession" placeholder="Your Profession" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="City, Country" required>
+
+            <label for="workExperience">Work Experience:</label>
+            <textarea id="workExperience" name="workExperience" placeholder="Describe your work experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" placeholder="Your education background" required></textarea>
+
+            <label for="expertise">Expertise:</label>
+            <textarea id="expertise" name="expertise" placeholder="Your areas of expertise" required></textarea>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="HTML, CSS, JavaScript" required>
+
+            <label for="languages">Languages (comma-separated):</label>
+            <input type="text" id="languages" name="languages" placeholder="English, Spanish" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <!-- Dynamic Resume Display Section -->
+    <section class="dynamic-resume box">
+        <h2><i class="fa-solid fa-user"></i> Editable Resume</h2>
+        <hr>
+        <div id="displayResume"></div>
+        <button id="printButton" style="display: none;">Print Resume</button>
+        <button id="downloadButton" style="display: none;">Download Resume</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Syeda Nameera | <a href="mailto:Nameera456@gmail.com">Contact Me</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
